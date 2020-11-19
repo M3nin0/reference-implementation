@@ -64,6 +64,7 @@ hub_images:
 	docker pull o2rproject/o2r-transporter;
 	docker pull o2rproject/o2r-guestlister;
 	docker pull o2rproject/o2r-bindings;
+	docker pull o2rproject/containerit;
 
 hub_versions:
 	@docker inspect --format '{{index .Config.Labels "org.label-schema.name"}}: {{index .Config.Labels "org.label-schema.version"}}'	   o2rproject/o2r-bouncer;
