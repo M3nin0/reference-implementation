@@ -74,6 +74,7 @@ services:
       - configmongodb
     volumes:
       - o2rvol:/tmp/o2r
+      - ./config/config-muncher.js:/muncher/config/config.js
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
       - "MUNCHER_MONGODB=mongodb://mongodb:27017/"
